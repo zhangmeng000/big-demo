@@ -3,15 +3,10 @@ import React from 'react'
 class Work extends React.Component {
   render () {
     return(
-      <div>
-        <form>
+      <div className="cover">
         <p>工作经历</p>
-        <label>12.8-14.5</label>
-        <textarea>
-
-
-        </textarea>
-        </form>
+        <p>15.5-16.7</p>
+        <span className = 'blogsp'>团队合作，前端制作，维护</span>
       </div>
     )
   }
