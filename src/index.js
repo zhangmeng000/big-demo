@@ -1,6 +1,8 @@
 import React from 'react';
 import {render} from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './main.css';
+import Routes from './Routes.js';
 
-import App from './App.js';
 
-render(<App />,document.getElementById('root'));
+render(<Routes />,document.getElementById('root'));
