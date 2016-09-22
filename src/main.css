@@ -79,12 +79,7 @@ a:hover,a:focus,a:active,a:visited{
   background-image: url(./images/1.jpg);
   background-position: 50% 50%;
 }
-.content-main p{
-  font-size: 32px;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 20px;
-}
+
 .home-container{
   width: 100%;
   display: flex;
@@ -97,6 +92,10 @@ a:hover,a:focus,a:active,a:visited{
   flex-direction: column;
 }
 .cover p{
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
   display: flex;
   flex-grow: 1;
   color: #fff;
@@ -109,8 +108,10 @@ a:hover,a:focus,a:active,a:visited{
   margin:auto;
 }
 .home-btn{
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
   border: none;
-  border-radius: 2px;
+  border-radius: 5px;
   background-color: #ff4081;
   padding:8px 20px;
   font-size: 16px;
@@ -125,4 +126,19 @@ a:hover,a:focus,a:active,a:visited{
   font-size: 24px;
   flex-direction: column;
   font-style: italic;
+  padding: 0 25px;
+}
+.blog-btn{
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  background-color: #fff;
+  border: 1px solid #FF4081;
+  border-radius: 20px;
+  padding: 5px 20px;
+  color: #FF4081;
+  font-size: 14px;
+}
+.blog-btn:hover{
+  color:#fff;
+  background-color: #ff4081;
 }

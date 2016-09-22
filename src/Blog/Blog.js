@@ -1,11 +1,27 @@
 import React from 'react'
-
+import BlogCard from '../component/BlogCard';
+import { getJson } from '../utils/helpers';
 class Blog extends React.Component {
+  constructor(){
+    super();
+    this.state={
+      data:[],
+      wait:true
+    }
+  }
+  componentDidMount(){
+    getJson()
+      .then( (recData) => {
+        this.setState({
+          data:recData.getJson,
+          wait:false
+        })
+      });
+  }
   render () {
     return(
-      <div className="cover">
-        <p>自我介绍</p>
-        <span className = 'blogsp'>喜欢写代码，喜欢搬代码</span>
+      <div style = {{width:'100%',marginTop:'20px'}}>
+        { this.state.wait ? '请稍等' : this.state.data.map( (item,i) => <BlogCard {...item} key={i} /> ) }
       </div>
     )
   }
