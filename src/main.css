@@ -33,6 +33,13 @@ a:hover,a:focus,a:active,a:visited{
   border-radius: 5px;
   padding: 5px;
 }
+.nav-header a{
+  font-size: 24px;
+  color:#fff;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2);
+}
 .nav-footer{
   height: 80px;
   background-color: #44cef6;
@@ -141,4 +148,12 @@ a:hover,a:focus,a:active,a:visited{
 .blog-btn:hover{
   color:#fff;
   background-color: #ff4081;
+}
+.work-nav{
+  position: relative;
+}
+.nav-zp{
+  display: block;
+  position: absolute;
+  bottom: 10px;
 }

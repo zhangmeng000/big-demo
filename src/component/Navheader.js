@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Link} from 'react-router'
 class Navheader extends React.Component {
   handleBack(){
       this.context.router.goBack();
@@ -9,7 +9,7 @@ class Navheader extends React.Component {
         <div className = 'nav-header'>
           <p onClick={this.handleBack.bind(this)}><span className="glyphicon glyphicon-arrow-left"></span>Back</p>
           zhangmeng@{this.props.title}
-          <p><span className="glyphicon glyphicon-th"></span></p>
+          <p><Link to = '/'><span className="glyphicon glyphicon-th"></span></Link></p>
         </div>
       )
   }
