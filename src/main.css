@@ -1,3 +1,4 @@
+
 body{
   -webkit-font-smoothing: antialiased;
 }
@@ -74,16 +75,18 @@ a:hover,a:focus,a:active,a:visited{
   font-weight: 600;
 }
 .left-nav a{
+  text-indent: 5px;
   padding:20px;
   font-size: 18px;
   color:#fff;
+  border-bottom: 1px solid #888144;
 }
 .content-main{
   display: flex;
   flex-grow: 1;
   background-color: #70f3ff;
   overflow-y: scroll;
-  background-image: url(./images/1.jpg);
+  /*background-image: url(./images/1.jpg);*/
   background-position: 50% 50%;
 }
 
@@ -144,6 +147,7 @@ a:hover,a:focus,a:active,a:visited{
   padding: 5px 20px;
   color: #FF4081;
   font-size: 14px;
+  margin:0px 5px;
 }
 .blog-btn:hover{
   color:#fff;
@@ -151,9 +155,11 @@ a:hover,a:focus,a:active,a:visited{
 }
 .work-nav{
   position: relative;
-}
-.nav-zp{
-  display: block;
-  position: absolute;
-  bottom: 10px;
+  overflow: hidden;
+  height:40vh;
+  background-image: url(http://oe1vpzng2.bkt.clouddn.com/fengjing10.jpg);
+  background-size: cover;
+  padding: 10px;
+  margin: 10px 4.15%;
+  color:#fff;
 }

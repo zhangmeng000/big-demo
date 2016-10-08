@@ -37,19 +37,22 @@ class BlogCard extends React.Component {
       desc:{
         fontSize:'16px',
         textIndent:'10px'
+      },
+      blog:{
+        paddingBottom:'10px'
       }
 
     }
     let address = `item/${this.props.url}`
     return(
       <div style = {styles.root}>
-      <div><p style = {styles.index}><span style={styles.num}>{this.props.index}</span></p></div>
-      <div>
-        <p style = {styles.title}>{this.props.title}</p>
-        <p style = {styles.desc}>{this.props.desc}</p>
-        <Link to = {address} className = "blog-btn" >更多</Link>
-        <a  className = "blog-btn" href = {this.props.hf} >more</a>
-      </div>
+        <div><p style = {styles.index}><span style={styles.num}>{this.props.index}</span></p></div>
+        <div style = {styles.blog}>
+          <p style = {styles.title}>{this.props.title}</p>
+          <p style = {styles.desc}>{this.props.desc}</p>
+          <Link to = {address} className = "blog-btn" >更多</Link>
+          <a  className = "blog-btn" href = {this.props.hf} >MORE</a>
+        </div>
       </div>
     )
   }
