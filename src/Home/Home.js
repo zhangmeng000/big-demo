@@ -26,6 +26,8 @@ class Home extends React.Component {
             <h2 style={styles.h2}>HI, 我是 <span style={{color:'#00bcd4'}}>zhangmeng</span></h2>
             <p style={{marginBottom:'20px'}}>WEB DEVELOPER</p>
             <button className="home-btn"><a href="https://github.com/zhangmeng000" style={{color:'#fff'}}>HIRE ME</a></button>
+            <p>Tel:15710908002</p>
+            <p>E-mail:1550685677@qq.com</p>
           </div>
         </div>
       </div>
